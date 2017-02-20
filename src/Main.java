@@ -7,6 +7,7 @@ public class  Main {
         branch.addNewCustomer("Silpo",100.00);
         branch.addCustomerTransaction("Silpo",150.00);
         branch.showTransaction("Silpo");
+        branch.showTransaction("Virtus");
     }
 
 }
