@@ -3,11 +3,11 @@
  */
 public class  Main {
     public static void main(String[] args){
-        Branch branch = new Branch("Privat");
-        branch.addNewCustomer("Silpo",100.00);
-        branch.addCustomerTransaction("Silpo",150.00);
-        branch.showTransaction("Silpo");
-        branch.showTransaction("Virtus");
+       Bank bankPrivat =new Bank("Privat");
+       bankPrivat.addNewBranch("Deposit");
+       bankPrivat.addCustomer("Deposit","Autoressora",200.500);
+       bankPrivat.addCustomer("Deposit","Virtus", 340.450);
+       bankPrivat.showListOfCustomers("Deposit",true);
     }
 
 }

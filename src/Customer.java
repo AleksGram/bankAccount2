@@ -20,6 +20,7 @@ public class Customer {
     public ArrayList<Double> getTransaction() {
         return transaction;
     }
+
     public void showCustomerTransactions(){
         for(int i=0;i<this.transaction.size();i++){
             System.out.println((i+1)+" tr "+transaction.get(i));
