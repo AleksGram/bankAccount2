@@ -39,7 +39,7 @@ public class Bank {
     private Branch findBranch(String branchName) {
         for (int i = 0; i < branches.size(); i++) {
             Branch chekedBranch = branches.get(i);
-            if (chekedBranch.equals(branchName)) {
+            if (chekedBranch.getName().equals(branchName)) {
                 return chekedBranch;
             }
         }
@@ -49,13 +49,16 @@ public class Bank {
     public boolean showListOfCustomers(String branchName, boolean showTransactions) {
         Branch customersBranch = findBranch(branchName);
         if (customersBranch != null) {
+            System.out.println("Branch "+branchName+"  information: ");
             ArrayList<Customer> listOfCustomers = customersBranch.getCustomers();
             for (int i = 0; i < listOfCustomers.size(); i++) {
                 Customer customer = listOfCustomers.get(i);
                 System.out.println((i + 1) + " " + customer.getName());
 
                 if (showTransactions == true) {
+                    System.out.println("Transactions of the "+customer.getName());
                     customer.showCustomerTransactions();
+                    System.out.println();
 
                 }
             }

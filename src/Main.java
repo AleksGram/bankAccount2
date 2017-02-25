@@ -7,7 +7,7 @@ public class  Main {
        bankPrivat.addNewBranch("Deposit");
        bankPrivat.addCustomer("Deposit","Autoressora",200.500);
        bankPrivat.addCustomer("Deposit","Virtus", 340.450);
-       bankPrivat.showListOfCustomers("Deposit",true);
+       bankPrivat.showListOfCustomers("Deposit",false);
     }
 
 }
