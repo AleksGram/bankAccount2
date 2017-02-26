@@ -8,6 +8,14 @@ public class  Main {
        bankPrivat.addCustomer("Deposit","Autoressora",200.500);
        bankPrivat.addCustomer("Deposit","Virtus", 340.450);
        bankPrivat.showListOfCustomers("Deposit",false);
+       bankPrivat.addCustomer("Credit","Ivanov",45);
+
+
+       if(!bankPrivat.addCustomer("Credit","Petrov",230.00)){
+           System.out.println("Branch Credit, doesn't exist");
+       }
     }
+
+
 
 }
